@@ -18,6 +18,7 @@
 #include <string>
 
 #include "i2c_smbus.h"
+#include "FanController.h"
 #include "NetworkClient.h"
 #include "NetworkServer.h"
 #include "ProfileManager.h"
@@ -105,9 +106,11 @@ public:
     void RegisterI2CBus(i2c_smbus_interface *);
     std::vector<i2c_smbus_interface*> & GetI2CBusses();
     
+    void RegisterFanController(FanController *fan_controller);
     void RegisterRGBController(RGBController *rgb_controller);
     void UnregisterRGBController(RGBController *rgb_controller);
 
+    std::vector<FanController*> & GetFanControllers();
     std::vector<RGBController*> & GetRGBControllers();
     
     void RegisterI2CBusDetector         (I2CBusDetectorFunction     detector);
@@ -198,6 +201,11 @@ private:
     | I2C/SMBus Interfaces                                                                  |
     \*-------------------------------------------------------------------------------------*/
     std::vector<i2c_smbus_interface*>           busses;
+
+    /*-------------------------------------------------------------------------------------*\
+    | FanControllers                                                                        |
+    \*-------------------------------------------------------------------------------------*/
+    std::vector<FanController*>                 fan_controllers;
 
     /*-------------------------------------------------------------------------------------*\
     | RGBControllers                                                                        |
