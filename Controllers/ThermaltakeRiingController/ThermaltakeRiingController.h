@@ -8,6 +8,7 @@
 \*-----------------------------------------*/
 
 #include "RGBController.h"
+#include <string>
 #include <vector>
 #include <hidapi/hidapi.h>
 
@@ -64,6 +65,7 @@ public:
 
     std::string     GetDeviceLocation();
     std::string     GetSerialString();
+    std::string     GetFirmwareVersion();
 
     void            SetChannelLEDs(unsigned char channel, RGBColor * colors, unsigned int num_colors);
     void            SetMode(unsigned char mode, unsigned char speed);
@@ -83,8 +85,6 @@ private:
     std::string     location;
 
     void    SendInit();
-
-
 
     void    SendRGB
                 (
