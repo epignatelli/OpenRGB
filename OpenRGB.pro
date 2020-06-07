@@ -297,6 +297,7 @@ HEADERS +=                                                                      
     Controllers/CorsairHydroPlatinumController/CorsairHydroPlatinumController.h                 \
     Controllers/CorsairHydroPlatinumController/RGBController_CorsairHydroPlatinum.h             \
     Controllers/CorsairLightingNodeController/CorsairLightingNodeController.h                   \
+    Controllers/CorsairLightingNodeController/FanController_CorsairCommander.h                  \
     Controllers/CorsairLightingNodeController/RGBController_CorsairLightingNode.h               \
     Controllers/CorsairPeripheralController/CorsairPeripheralController.h                       \
     Controllers/CorsairPeripheralController/CorsairK100Controller.h                             \
@@ -744,6 +745,7 @@ SOURCES +=                                                                      
     Controllers/CorsairHydroPlatinumController/RGBController_CorsairHydroPlatinum.cpp           \
     Controllers/CorsairLightingNodeController/CorsairLightingNodeController.cpp                 \
     Controllers/CorsairLightingNodeController/CorsairLightingNodeControllerDetect.cpp           \
+    Controllers/CorsairLightingNodeController/FanController_CorsairCommander.cpp                \
     Controllers/CorsairLightingNodeController/RGBController_CorsairLightingNode.cpp             \
     Controllers/CorsairPeripheralController/CorsairPeripheralController.cpp                     \
     Controllers/CorsairPeripheralController/CorsairPeripheralControllerDetect.cpp               \
