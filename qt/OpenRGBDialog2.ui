@@ -67,10 +67,10 @@
        <widget class="QTabWidget" name="FanTabBar">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>4</width>
-          <height>4</height>
+          <x>9</x>
+          <y>9</y>
+          <width>658</width>
+          <height>226</height>
          </rect>
         </property>
         <property name="tabPosition">
