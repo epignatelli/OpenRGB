@@ -1,5 +1,6 @@
 #include "Detector.h"
 #include "FanBusController.h"
+#include "FanController_FanBus.h"
 #include "RGBController_FanBus.h"
 
 void DetectFanBusControllers(std::vector<RGBController*> &rgb_controllers)
@@ -29,10 +30,13 @@ void DetectFanBusControllers(std::vector<RGBController*> &rgb_controllers)
 
                 for(unsigned int controller_idx = 0; controller_idx < detected_controllers.size(); controller_idx++)
                 {
-                        FanBusController*     controller     = new FanBusController(new_interface, detected_controllers[controller_idx]);
-                        RGBController_FanBus* rgb_controller = new RGBController_FanBus(controller);
+                    FanBusController*     controller     = new FanBusController(new_interface, detected_controllers[controller_idx]);
+                    RGBController_FanBus* rgb_controller = new RGBController_FanBus(controller);
 
-                    rgb_controllers.push_back(rgb_controller);
+                    ResourceManager::get()->RegisterRGBController(rgb_controller);
+
+                    FanController_FanBus* fan_controller = new FanController_FanBus(controller);
+                    ResourceManager::get()->RegisterFanController(fan_controller);
                 }
             }
         }

@@ -353,6 +353,7 @@ HEADERS +=                                                                      
     Controllers/EVisionKeyboardController/RGBController_EVisionKeyboard.h                       \
     Controllers/FanBusController/FanBusController.h                                             \
     Controllers/FanBusController/FanBusInterface.h                                              \
+    Controllers/FanBusController/FanController_FanBus.h                                         \
     Controllers/FanBusController/RGBController_FanBus.h                                         \
     Controllers/GainwardGPUController/GainwardGPUv1Controller.h                                 \
     Controllers/GainwardGPUController/GainwardGPUv2Controller.h                                 \
@@ -824,6 +825,7 @@ SOURCES +=                                                                      
     Controllers/FanBusController/FanBusController.cpp                                           \
     Controllers/FanBusController/FanBusControllerDetect.cpp                                     \
     Controllers/FanBusController/FanBusInterface.cpp                                            \
+    Controllers/FanBusController/FanController_FanBus.cpp                                       \
     Controllers/FanBusController/RGBController_FanBus.cpp                                       \
     Controllers/GainwardGPUController/GainwardGPUControllerDetect.cpp                           \
     Controllers/GainwardGPUController/GainwardGPUv1Controller.cpp                               \
