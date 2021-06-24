@@ -331,3 +331,4 @@ While no code from these projects directly made its way into OpenRGB, these proj
   * g810-led: https://github.com/MatMoul/g810-led
   * liquidctl: https://github.com/jonasmalacofilho/liquidctl
   * Annemone: https://github.com/manualmanul/Annemone
+  * razer-laptop-control: https://github.com/rnd-ash/razer-laptop-control
