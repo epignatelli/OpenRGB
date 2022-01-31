@@ -150,6 +150,27 @@ before_script:
     expire_in: 30 days
 
 #-----------------------------------------------------------------------#
+# Linux (.deb) Raspbian Bullseye armhf Build Target                     #
+#-----------------------------------------------------------------------#
+"Linux armhf .deb (Raspbian Bullseye)":
+  tags:
+   - raspberrypi
+  stage: build
+  script:
+  - dpkg-architecture -l
+  - dpkg-buildpackage -us -B
+  - rm -v ../openrgb-dbgsym*.deb
+  - mv -v ../openrgb*.deb ./
+
+  artifacts:
+    name: "${CI_PROJECT_NAME}_Raspbian_armhf_deb_${CI_COMMIT_SHORT_SHA}"
+    paths:
+    - openrgb*.deb
+    exclude:
+    - openrgb-dbgsym*.deb
+    expire_in: 30 days
+
+#-----------------------------------------------------------------------#
 # Linux (.rpm) 64-bit Build Target                                      #
 #-----------------------------------------------------------------------#
 "Linux 64 rpm":
