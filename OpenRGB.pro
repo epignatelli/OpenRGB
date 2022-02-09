@@ -126,6 +126,7 @@ INCLUDEPATH +=                                                                  
     Controllers/MSIMysticLightController/                                                       \
     Controllers/MSIOptixController/                                                             \
     Controllers/MSIRGBController/                                                               \
+    Controllers/NZXTHue1Controller/                                                             \
     Controllers/NZXTHue2Controller/                                                             \
     Controllers/NZXTHuePlusController/                                                          \
     Controllers/NZXTKrakenController/                                                           \
@@ -408,6 +409,8 @@ HEADERS +=                                                                      
     Controllers/MSIOptixController/RGBController_MSIOptix.h                                     \
     Controllers/MSIRGBController/MSIRGBController.h                                             \
     Controllers/MSIRGBController/RGBController_MSIRGB.h                                         \
+    Controllers/NZXTHue1Controller/NZXTHue1Controller.h                                         \
+    Controllers/NZXTHue1Controller/RGBController_NZXTHue1.h                                     \
     Controllers/NZXTHue2Controller/NZXTHue2Controller.h                                         \
     Controllers/NZXTHue2Controller/RGBController_NZXTHue2.h                                     \
     Controllers/NZXTHuePlusController/NZXTHuePlusController.h                                   \
@@ -831,6 +834,9 @@ SOURCES +=                                                                      
     Controllers/MSIRGBController/MSIRGBController.cpp                                           \
     Controllers/MSIRGBController/MSIRGBControllerDetect.cpp                                     \
     Controllers/MSIRGBController/RGBController_MSIRGB.cpp                                       \
+    Controllers/NZXTHue1Controller/NZXTHue1Controller.cpp                                       \
+    Controllers/NZXTHue1Controller/NZXTHue1ControllerDetect.cpp                                 \
+    Controllers/NZXTHue1Controller/RGBController_NZXTHue1.cpp                                   \
     Controllers/NZXTHue2Controller/NZXTHue2Controller.cpp                                       \
     Controllers/NZXTHue2Controller/NZXTHue2ControllerDetect.cpp                                 \
     Controllers/NZXTHue2Controller/RGBController_NZXTHue2.cpp                                   \
