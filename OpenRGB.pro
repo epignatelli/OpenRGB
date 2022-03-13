@@ -71,6 +71,7 @@ INCLUDEPATH +=                                                                  
     serial_port/                                                                                \
     super_io/                                                                                   \
     AutoStart/                                                                                  \
+    Controllers/AcerMonitorController/                                                          \
     Controllers/AlienwareController/                                                            \
     Controllers/AlienwareKeyboardController/                                                    \
     Controllers/AMDWraithPrismController/                                                       \
@@ -217,6 +218,8 @@ HEADERS +=                                                                      
     serial_port/serial_port.h                                                                   \
     super_io/super_io.h                                                                         \
     AutoStart/AutoStart.h                                                                       \
+    Controllers/AcerMonitorController/AcerMonitorController.h                                   \
+    Controllers/AcerMonitorController/RGBController_AcerMonitor.h                               \
     Controllers/AlienwareController/AlienwareController.h                                       \
     Controllers/AlienwareController/RGBController_Alienware.h                                   \
     Controllers/AlienwareKeyboardController/AlienwareAW510KController.h                         \
@@ -608,6 +611,9 @@ SOURCES +=                                                                      
     serial_port/serial_port.cpp                                                                 \
     super_io/super_io.cpp                                                                       \
     AutoStart/AutoStart.cpp                                                                     \
+    Controllers/AcerMonitorController/AcerMonitorController.cpp                                 \
+    Controllers/AcerMonitorController/AcerMonitorControllerDetect.cpp                           \
+    Controllers/AcerMonitorController/RGBController_AcerMonitor.cpp                             \
     Controllers/AlienwareController/AlienwareController.cpp                                     \
     Controllers/AlienwareController/AlienwareControllerDetect.cpp                               \
     Controllers/AlienwareController/RGBController_Alienware.cpp                                 \

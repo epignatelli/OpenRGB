@@ -20,6 +20,13 @@ KERNEL=="port", TAG+="uaccess"
 KERNEL=="hidraw*", SUBSYSTEM=="hidraw", TAG+="uaccess"
 
 #---------------------------------------------------------------#
+# Acer Rear Strip Monitors                                      #
+#---------------------------------------------------------------#
+SUBSYSTEMS=="usb", ATTR{idVendor}=="042e", ATTR{idProduct}=="ac0b", TAG+="uaccess", TAG+="Acer_XB323QK_NV"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="042e", ATTR{idProduct}=="ac0c", TAG+="uaccess", TAG+="Acer_XB273U_NV"
+SUBSYSTEMS=="usb", ATTR{idVendor}=="042e", ATTR{idProduct}=="ac0d", TAG+="uaccess", TAG+="Acer_X25"
+
+#---------------------------------------------------------------#
 #  AMD Wraith Prism                                             #
 #---------------------------------------------------------------#
 SUBSYSTEMS=="usb", ATTR{idVendor}=="2516", ATTR{idProduct}=="0051", TAG+="uaccess"
